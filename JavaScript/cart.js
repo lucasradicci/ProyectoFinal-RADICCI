@@ -22,3 +22,20 @@ function addToCart(productId) {
         });
 }
 
+// Actualizar la visualización del carrito
+function updateCart() {
+    $('#cart').html('<h2>Carrito</h2>');
+    if (cart.length === 0) {
+        $('#cart').append('<p>El carrito está vacío.</p>');
+        return;
+    }
+    cart.forEach(item => {
+        const cartItemDiv = $(`
+            <p>${item.name} x${item.quantity} - $${item.price * item.quantity}</p>
+        `);
+        $('#cart').append(cartItemDiv);
+    });
+    const totalPrice = cart.reduce((total, item) => total + item.price * item.quantity, 0);
+    $('#cart').append(<h3>Total: $${totalPrice}</h3>);
+}
+
