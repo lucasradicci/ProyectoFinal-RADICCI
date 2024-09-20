@@ -2,7 +2,7 @@ $(document).ready(function() {
     loadProducts();
 });
 
-// Inicializar la aplicación
+// Inicializar el simulador
 function loadProducts() {
     $.getJSON('products.json')
         .done(function(products) {
