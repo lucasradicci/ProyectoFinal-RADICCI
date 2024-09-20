@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "name": "Lavarropas",
+        "brand": "Drean",
+        "price": 500.000
+    },
+    {
+        "id": 2,
+        "name": "Televisor",
+        "brand": "TCL",
+        "price": 300.000
+    },
+
+    {
+        "id": 3,
+        "name": "Microondas",
+        "brand": "HITPLUS",
+        "price": 100.000
+    },
+
+    {
+        "id": 4,
+        "name": "Horno Electrico",
+        "brand": "Drean",
+        "price": 120.000
+    },
+
+    {
+        "id": 5,
+        "name": "Heladera",
+        "brand": "Drean",
+        "price": 900.000
+    }
+
+
+
+]
