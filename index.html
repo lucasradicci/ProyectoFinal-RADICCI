@@ -1,25 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de Tienda de Electrodomésticos</title>
     <link rel="stylesheet" href="styles.css">
-    <title>Tu electroHogar</title>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!-- Incluye jQuery -->
 </head>
 <body>
-    <div id="app">
-        <h1>Tu ElectroHogar</h1>
-        <div id="product-list"></div>
-        <div id="cart"></div>
-        <button id="clear-cart">Finalizar Compra.</button>
-        <div id="message"></div>
-    </div>  
+    <h1>Tienda de Electrodomésticos</h1>
 
+    <!-- Contenedor para los productos -->
+    <div id="product-list"></div>
 
+    <!-- Contenedor para el carrito de compras -->
+    <div id="cart">
+        <h2>Carrito</h2>
+        <p>El carrito está vacío.</p>
+    </div>
 
-    <script src="JavaScript/cart.js"></script>
+    <!-- Botón para limpiar el carrito -->
+    <button id="clear-cart">Finalizar compra</button>
+
+    <!-- Contenedor para mensajes -->
+    <div id="message"></div>
+
+    <!-- Scripts -->
+    <script src="JavaScript/products.js"></script>
     <script src="JavaScript/main.js"></script>
-    <script src="JavaScript/products.js"></script> 
+    <script src="JavaScript/cart.js"></script>
 </body>
 </html>
