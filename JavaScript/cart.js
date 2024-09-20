@@ -39,3 +39,18 @@ function updateCart() {
     $('#cart').append(<h3>Total: $${totalPrice}</h3>);
 }
 
+// Limpiar el carrito
+$('#clear-cart').on('click', function() {
+    if (cart.length > 0) {
+        displayMessage('Compra finalizada. Gracias por su compra.');
+        cart = [];
+        updateCart();
+    } else {
+        displayMessage('El carrito está vacío.');
+    }
+});
+
+// Función para mostrar mensajes en la interfaz
+function displayMessage(message) {
+    $('#message').html(message);
+}
